@@ -10,6 +10,29 @@ public class ArrayTest {
         int[][] array1 = new int[10][10];
         int[][] array2 = new int[10][10];
 
+        int[][] multi1 = new int[][]{
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 2 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+        };
+
+        int[][] mult2 = new int[][]{
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 2 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+        };
+
+        System.out.println("Compare two same two dimensional arrays:");
+        if(comparator.compare(multi1, mult2)) {
+            System.out.println("Arrays are the same.\n");
+        }else
+            System.out.println("Arrays are not the same.\n");
+
+        /*
         Random randomNumber = new Random();
 
         // fill up first array with random numbers
@@ -42,5 +65,6 @@ public class ArrayTest {
             System.out.println("Arrays are the same.\n");
         }else
             System.out.println("Arrays are not the same.\n");
+            */
     }
 }
